@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Todo App</title>
+  </head>
+  <body>
+    <h1 class="text-xl text-center font-bold">Todo <span class="text-green-500">List</span></h1>
+    <div class="flex justify-center gap-2 mt-4">
+      <input
+        type="text"
+        id="task"
+        class="border border-gray-400 rounded-md p-2 outline-none"
+      />
+      <button
+        id="add"
+        onclick="addTask()"
+        class="bg-blue-500 text-white rounded-md p-2 hover:bg-blue-600"
+      >
+        Add
+      </button>
+    </div>
+
+    <div class="flex flex-col items-center justify-center">
+      <h2><span class="text-green-500"><span class="text-red-500">T</span>odo</span> list</h2>
+      <ul id="list" class="list-disc"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
